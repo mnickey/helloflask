@@ -4,11 +4,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def root_route():
-	return "Hello World! \n For a more personalized version try adding /YOUR_NAME to the end of this URL"
+	return "Hello World! \
+	For a more personalized version try adding /hello/YOUR_NAME to the end of this URL"
 
 @app.route("/hello")
 def hello_world():
-	return "Hello World! \n For a more personalized version try adding /YOUR_NAME to the end of this URL"
+	return "Hello World! \
+	For a more personalized version try adding /hello/YOUR_NAME to the end of this URL"
 
 @app.route("/hello/<name>")
 def hello_person(name):
