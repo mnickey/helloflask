@@ -2,9 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route("/hello")
 def hello_world():
-	return "Hello World!"
+	return "Hello World! \n For a more personalized version try adding /YOUR_NAME to the end of this URL"
 
 @app.route("/hello/<name>")
 def hello_person(name):
